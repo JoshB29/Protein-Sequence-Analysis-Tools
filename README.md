@@ -28,4 +28,4 @@ Description: Given an aligned fasta file (.afa) remove all gaps from the input f
 ## removeGapstemplate.pl
 
 Usage: `perl removeGaps.pl <number> input_file.afa`
-Description: Given an aligned fasta file (.afa) remove all gaps from the input file that correspond to gaps in the first <number sequences>.Unlike removeGaps.pl this this does not remove all gaps, just amino acids that correspond to gaps in the specified top <number> sequences. For example, if <number>=1, and the first sequence has gaps in position 3 and 7 then this will eliminate gaps and amino acids that correspond to positions 3 and 7.
+Description: Given an aligned fasta file (.afa) remove all gaps from the input file that correspond to gaps in the first <number sequences>. Unlike removeGaps.pl this this does not remove all gaps, just amino acids that correspond to gaps in the specified top <number> sequences. For example, if number=1, and the first sequence has gaps in position 3 and 7 then this will eliminate gaps and amino acids that correspond to positions 3 and 7.

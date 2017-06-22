@@ -31,7 +31,8 @@ Usage: `perl removeGaps.pl <number> input_file.afa`
 Description: Given an aligned fasta file (.afa) remove all gaps from the input file that correspond to gaps in the first <number sequences>. Unlike removeGaps.pl this this does not remove all gaps, just amino acids that correspond to gaps in the specified top <number> sequences. For example, if number=1, and the first sequence has gaps in position 3 and 7 then this will eliminate gaps and amino acids that correspond to positions 3 and 7.
 
 ## shannonEntropyMSA.R
+
 Usage: `R  --no-save --no-restore < shannonEntropyMSA.R --args input_file.afa outputfile.txt`
-Description: Given an aligned input file (assuming that all of the sequences in input file are over one line), calculates the entropy of each position in the alignment. 0 means that there is only 1 residue in the position (i.e. totally conserved). 4.322 is the maximum and means all residues are equally present.This script can only be used for protein sequence and not DNA sequence. The outpufile contains a tab delimited file with the following information
+Description: Given an aligned  Multiple Sequence Slignment input file (assuming that all of the sequences in input file are over one line), calculates the entropy of each position in the alignment. 0 means that there is only 1 residue in the position (i.e. totally conserved). 4.322 is the maximum and means all residues are equally present.This script can only be used for protein sequence and not DNA sequence. The outpufile contains a tab delimited file with the following information
 
         "Position","AA_of_first_Sequence","Entropy","Number_of_Gaps","Number_of_Non_Gaps"
